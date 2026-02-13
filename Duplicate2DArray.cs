@@ -33,14 +33,14 @@ class ArrayProgram
                 int count = 0;
                 bool alreadyPrinted = false;
 
-                for (int x = 0; x < i; x++)
+                // Check if already counted before
+                for (int x = 0; x < r; x++)
                 {
                     for (int y = 0; y < c; y++)
                     {
-                        if (arr[x, y] == arr[i, j])
+                        if ((x < i || (x == i && y < j)) && arr[x, y] == arr[i, j])
                         {
                             alreadyPrinted = true;
-                            break;
                         }
                     }
                 }
@@ -48,6 +48,7 @@ class ArrayProgram
                 if (alreadyPrinted)
                     continue;
 
+                // Count occurrences
                 for (int x = 0; x < r; x++)
                 {
                     for (int y = 0; y < c; y++)
