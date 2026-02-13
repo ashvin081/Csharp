@@ -86,7 +86,7 @@ class HotelMenu
 
         do
         {
-            Console.Write("Quantity : ");
+            Console.Write("Enter Quantity : ");
             int q = Convert.ToInt32(Console.ReadLine());
 
             totalQty += q;
