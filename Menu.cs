@@ -1,5 +1,4 @@
 using System;
-
 class HotelMenu
 {
     static void Main()
@@ -12,7 +11,6 @@ class HotelMenu
 
         do
         {
-            Console.Clear();
             Console.WriteLine("---------------------------------");
             Console.WriteLine("            HOTEL MENU           ");
             Console.WriteLine("---------------------------------");
@@ -58,7 +56,6 @@ class HotelMenu
 
         int grandTotal = total1 + total2 + total3;
 
-        Console.Clear();
         Console.WriteLine("----------------------------------");
         Console.WriteLine("              FINAL BILL          ");
         Console.WriteLine("----------------------------------");
